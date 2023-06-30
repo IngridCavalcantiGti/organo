@@ -4,7 +4,7 @@ import ListaSuspensa from '../ListaSuspensa'
 import './Formulario.css'
 import { useState } from 'react'
 
-const Formulario = () => {
+const Formulario = ({ aoColaboradorCadastrado }) => {
 
     const times = [
         'Programação',
@@ -23,7 +23,12 @@ const Formulario = () => {
 
     const aoSalvar = (evento) => {
         evento.preventDefault()
-        console.log(nome, cargo, imagem, time)
+        aoColaboradorCadastrado({
+            nome,
+            cargo,
+            imagem,
+            time
+        })
     }
 
     return (
