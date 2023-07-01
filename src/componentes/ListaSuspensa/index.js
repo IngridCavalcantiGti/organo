@@ -9,6 +9,7 @@ const ListaSuspensa = ({ label, itens, obrigatorio, valor, aoAlterado }) => {
                 value={valor}
                 onChange={evento => aoAlterado(evento.target.value)}
             >
+                <option value=''></option>
                 {itens.map(item => <option key={item}>{item}</option>)}
             </select>
         </div>
