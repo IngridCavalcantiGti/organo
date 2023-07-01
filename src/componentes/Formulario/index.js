@@ -4,17 +4,7 @@ import ListaSuspensa from '../ListaSuspensa'
 import './Formulario.css'
 import { useState } from 'react'
 
-const Formulario = ({ aoColaboradorCadastrado }) => {
-
-    const times = [
-        'Programação',
-        'Front-End',
-        'Data Science',
-        'Devops',
-        'Ux e Design',
-        'Mobile',
-        'Inovação e Gestão'
-    ]
+const Formulario = ({ aoColaboradorCadastrado, times }) => {
 
     const [nome, setNome] = useState('')
     const [cargo, setCargo] = useState('')
