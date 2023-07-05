@@ -1,7 +1,7 @@
 import './CampoTexto.css'
 
 
-const CampoTexto = ({ label, placeholder, obrigatorio, aoAlterado, valor }) => {
+const CampoTexto = ({ label, placeholder, obrigatorio, aoAlterado, valor, }) => {
 
     return (
         <div className="campo-texto">

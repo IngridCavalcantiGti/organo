@@ -17,3 +17,8 @@
     padding: 24px;
     box-sizing: border-box;
 }
+
+.campo-texto input:focus-visible {
+    outline: none;
+    box-shadow: 3px 3px 6px rgba(85, 82, 219, 0.7);
+}
