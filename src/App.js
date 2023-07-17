@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Banner from './componentes/Banner';
 import Formulario from './componentes/Formulario';
 import Time from './componentes/Time';
+import Rodape from './componentes/Rodape';
 import { v4 as uuidv4 } from 'uuid'
 
 
@@ -58,7 +59,7 @@ function App() {
     {
       id: uuidv4(),
       favorito: false,
-      nome: 'Ingrid Cavalcanti',
+      nome: 'Ingrid Cavalcanti 2',
       cargo: 'Desenvolvedora de software',
       imagem: 'https://github.com/IngridCavalcantiGti.png',
       time: times[0].nome
@@ -66,7 +67,7 @@ function App() {
     {
       id: uuidv4(),
       favorito: false,
-      nome: 'Ingrid Cavalcanti',
+      nome: 'Ingrid Cavalcanti 3',
       cargo: 'Desenvolvedora de software',
       imagem: 'https://github.com/IngridCavalcantiGti.png',
       time: times[0].nome
@@ -74,7 +75,7 @@ function App() {
     {
       id: uuidv4(),
       favorito: false,
-      nome: 'Ingrid Cavalcanti',
+      nome: 'Ingrid Cavalcanti 4',
       cargo: 'Desenvolvedora de software',
       imagem: 'https://github.com/IngridCavalcantiGti.png',
       time: times[0].nome
@@ -129,7 +130,7 @@ function App() {
           />
         )}
       </section>
-      {/* adicionar rodape aqui */}
+      <Rodape />
     </div>
   );
 }
